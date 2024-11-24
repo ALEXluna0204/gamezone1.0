@@ -1,0 +1,131 @@
+	<!DOCTYPE html>
+	<html lang="uk">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Окуляри віртуальної реальності</title>
+	    <link rel="stylesheet" href="style.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	</head>
+	<body>
+	    <header>
+	        <div class="logo">
+	            <a href="index.html"><img src="images/logo.png" alt="GameZone Logo"></a>
+	        </div>
+	        <nav>
+	            <ul>
+	                <li class="dropdown">
+	                    <a href="#laptops" class="dropdown-toggle">Ноутбуки, ПК та монітори</a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="gaming-laptops.html">Ігрові ноутбуки</a></li>
+	                        <li><a href="business-laptops.html">Бізнес ноутбуки</a></li>
+	                        <li><a href="computers.html">Комп'ютери</a></li>
+	                        <br>
+	                        <li><a href="monitors.html">Монітори</a></li>
+	                    </ul>
+	                </li>
+	                <li class="dropdown">
+	                    <a href="#" class="dropdown-toggle">Аксесуари</a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="mouse-pads.html">Ігрові поверхні</a></li>
+	                        <li><a href="keyboards.html">Клавіатури</a></li>
+	                        <br>
+	                        <li><a href="microphones.html">Мікрофони</a></li>
+	                        <br>
+	                        <li><a href="mice.html">Миші</a></li>
+	                        <br>
+	                        <li><a href="headphones.html">Навушники</a></li>
+	                    </ul>
+	                </li>
+	                <li class="dropdown">
+	                    <a href="#" class="dropdown-toggle">Комплектуючі</a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="video-cards.html">Відеокарти</a></li>
+	                        <li><a href="computer-cases.html">Комп’ютерні корпуси</a></li>
+	                        <li><a href="motherboards.html">Материнські плати</a></li>
+	                        <li><a href="ram.html">Оперативна пам’ять</a></li>
+	                        <li><a href="processors.html">Процесори</a></li>
+	                        <li><a href="ssd.html">SSD-накопичувачі</a></li>
+	                    </ul>
+	                </li>
+	                <li class="dropdown">
+	                    <a href="#" class="dropdown-toggle">Консолі, контролери та VR</a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="game-consoles.html">Ігрові приставки</a></li>
+	                        <li><a href="gaming-steering-wheels.html">Ігрове кермо</a></li>
+	                        <li><a href="vr-headsets.html">Окуляри віртуальної реальності</a></li>
+	                        <li><a href="gamepads.html">Геймпади</a></li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </nav>
+	        <div class="cart">
+	            <a href="javascript:void(0);" onclick="toggleCart()">
+	                <i class="fas fa-shopping-cart"></i>
+	                <span class="cart-count" id="cart-count">0</span>
+	            </a>
+	        </div>
+	    </header>
+
+	    <main>
+	        <div class="product-container">
+	            <img src="images/vr1.jpg" alt="ASUS PCI-Ex GeForce RTX 4060 Ti" class="product-image">
+	            <div class="product-details">
+	                <h1>Sony PlayStation VR2</h1>
+	                <p class="product-price">Ціна: <span>25 999₴</span></p>
+	                <p class="product-description">
+	                Роздільна здатність: 2000 x 2040 пікселів на око
+	                <br>
+					Поле зору: 110 градусів
+					<br>
+					Частота оновлення: 90/120 Гц
+	                </p>
+	                <button class="add-to-cart" onclick="addToCart('Sony PlayStation VR2', 25999.00)">Додати до кошику</button>
+	            </div>
+	        </div>
+	    </main>
+
+	    <div class="cart-modal" id="cart-modal">
+	        <div class="cart-modal-content">
+	            <h2>Ваш кошик</h2>
+	            <div id="cart-items"></div>
+	            <div id="cart-summary">
+	                <p>Кількість товарів: <span id="summary-count">0</span></p>
+	                <p>Сума: <span id="cart-total">0.00₴</span></p>
+	            </div>
+	            <div style="display: flex; justify-content: space-between;">
+	                <button class="checkout" onclick="checkout()">Оформити замовлення</button>
+	                <button class="close" onclick="toggleCart()">Закрити</button>
+	            </div>
+	        </div>
+	    </div>
+
+	    <footer>
+	        <div class="footer-content">
+	            <div class="footer-section about">
+	                <h3>Про нас</h3>
+	                <p><strong>Телефон:</strong> +380 (123) 456-789</p>
+	                <p><strong>Email:</strong> support@gamezone.ua</p>
+	                <p><strong>Адреса:</strong> вул. Технологічна, 101, Київ, Україна</p>
+	            </div>
+
+	            <div class="footer-section social">
+	                <h3>Ми у соцмережах</h3>
+	                <div class="social-icons">
+	                    <a href="#"><i class="fab fa-facebook"></i></a>
+	                    <a href="#"><i class="fab fa-twitter"></i></a>
+	                    <a href="#"><i class="fab fa-instagram"></i></a>
+	                    <a href="#"><i class="fab fa-youtube"></i></a>
+	                </div>
+	            </div>
+	        </div>
+
+	        <div class="footer-bottom">
+	            <p>&copy; 2024 GameZone. Усі права захищено.</p>
+	        </div>
+	    </footer>
+
+	    <script src="script.js"></script>
+	</body>
+	</html>
+	 
