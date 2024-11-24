@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клавіатури</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Логотип -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="GameZone Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#laptops" class="dropdown-toggle">Ноутбуки, ПК та монітори</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="gaming-laptops.html">Ігрові ноутбуки</a></li>
+                        <li><a href="business-laptops.html">Бізнес ноутбуки</a></li>
+                        <li><a href="computers.html">Комп'ютери</a></li>
+                        <br>
+                        <li><a href="monitors.html">Монітори</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Аксесуари</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mouse-pads.html">Ігрові поверхні</a></li>
+                        <li><a href="keyboards.html">Клавіатури</a></li>
+                        <br>
+                        <li><a href="microphones.html">Мікрофони</a></li>
+                        <br>
+                        <li><a href="mice.html">Миші</a></li>
+                        <br>
+                        <li><a href="headphones.html">Навушники</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Комплектуючі</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="video-cards.html">Відеокарти</a></li>
+                        <li><a href="computer-cases.html">Комп’ютерні корпуси</a></li>
+                        <li><a href="motherboards.html">Материнські плати</a></li>
+                        <li><a href="ram.html">Оперативна пам’ять</a></li>
+                        <li><a href="processors.html">Процесори</a></li>
+                        <li><a href="ssd.html">SSD-накопичувачі</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Консолі, контролери та VR</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="game-consoles.html">Ігрові приставки</a></li>
+                        <li><a href="gaming-steering-wheels.html">Ігрове кермо</a></li>
+                        <li><a href="vr-headsets.html">Окуляри віртуальної реальності</a></li>
+                        <li><a href="gamepads.html">Геймпади</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="javascript:void(0);" onclick="toggleCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h2 style="text-align: center; color: black; font-size: 2em; margin: 20px 0;">Клавіатури</h2>
+        <div class="product-list" id="gaming-laptops">
+            <div class="product-item">
+                <a href="hator-rockfall-2.html">
+                    <img src="images/keyboard1.jpg" alt="Клавіатура HATOR Rockfall 2">
+                    <h3>Клавіатура HATOR Rockfall 2</h3>
+                    <p class="price">1 899₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="gamepro-mk130r.html">
+                    <img src="images/keyboard2.jpg" alt="Клавіатура GamePro MK130R">
+                    <h3>Клавіатура GamePro MK130R</h3>
+                    <p class="price">1 699₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="hator-skyfall-2.html">
+                    <img src="images/keyboard3.jpg" alt="Клавіатура HATOR Skyfall 2">
+                    <h3>Клавіатура HATOR Skyfall 2</h3>
+                    <p class="price">3 299₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="asus-rog-azoth-nx.html">
+                    <img src="images/keyboard4.jpg" alt="Клавіатура Asus ROG Azoth NX">
+                    <h3>Клавіатура Asus ROG Azoth NX</h3>
+                    <p class="price">9 999₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="logitech-g915-tkl-x.html">
+                    <img src="images/keyboard5.jpg" alt="Клавіатура Logitech G915 TKL X">
+                    <h3>Клавіатура Logitech G915 TKL X</h3>
+                    <p class="price">8 999₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="hator-starfall-rainbow.html">
+                    <img src="images/keyboard6.jpg" alt="Клавіатура Hator Starfall Rainbow">
+                    <h3>Клавіатура Hator Starfall Rainbow</h3>
+                    <p class="price">1 649₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="rzkt-mamba-tkl.html">
+                    <img src="images/keyboard7.jpg" alt="Клавіатура RZTK Mamba TKL">
+                    <h3>Клавіатура RZTK Mamba TKL</h3>
+                    <p class="price">1 699₴</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Ваш кошик</h2>
+            <div id="cart-items"></div>
+            <div id="cart-summary">
+                <p>Кількість товарів: <span id="summary-count">0</span></p>
+                <p>Сума: <span id="cart-total">0.00₴</span></p>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <button class="checkout" onclick="checkout()">Оформити замовлення</button>
+                <button class="close" onclick="toggleCart()">Закрити</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Про нас</h3>
+                <p><strong>Телефон:</strong> +380 (123) 456-789</p>
+                <p><strong>Email:</strong> support@gamezone.ua</p>
+                <p><strong>Адреса:</strong> вул. Технологічна, 101, Київ, Україна</p>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Ми у соцмережах</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 GameZone. Усі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

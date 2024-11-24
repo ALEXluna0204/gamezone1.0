@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин комп'ютерної техніки</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="GameZone Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#laptops" class="dropdown-toggle">Ноутбуки, ПК та монітори</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="gaming-laptops.html">Ігрові ноутбуки</a></li>
+                        <li><a href="business-laptops.html">Бізнес ноутбуки</a></li>
+                        <li><a href="computers.html">Комп'ютери</a></li>
+                        <br>
+                        <li><a href="monitors.html">Монітори</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Аксесуари</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mouse-pads.html">Ігрові поверхні</a></li>
+                        <li><a href="keyboards.html">Клавіатури</a></li>
+                        <br>
+                        <li><a href="microphones.html">Мікрофони</a></li>
+                        <br>
+                        <li><a href="mice.html">Миші</a></li>
+                        <br>
+                        <li><a href="headphones.html">Навушники</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Комплектуючі</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="video-cards.html">Відеокарти</a></li>
+                        <li><a href="computer-cases.html">Комп’ютерні корпуси</a></li>
+                        <li><a href="motherboards.html">Материнські плати</a></li>
+                        <li><a href="ram.html">Оперативна пам’ять</a></li>
+                        <li><a href="processors.html">Процесори</a></li>
+                        <li><a href="ssd.html">SSD-накопичувачі</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Консолі, контролери та VR</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="game-consoles.html">Ігрові приставки</a></li>
+                        <li><a href="gaming-steering-wheels.html">Ігрове кермо</a></li>
+                        <li><a href="vr-headsets.html">Окуляри віртуальної реальності</a></li>
+                        <li><a href="gamepads.html">Геймпади</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="javascript:void(0);" onclick="toggleCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="main-image" style="text-align: center; margin: 20px 0;">
+        <img src="images/main.png" alt="mainimage" style="max-width: 100%; height: auto;">
+    </div>
+
+    <main>
+        
+    <!-- Популярні ігрові ноутбуки -->
+    <h2 style="text-align: center;">Популярні ігрові ноутбуки</h2>
+    <div class="product-list" id="gaming-laptops">
+        <div class="product-item">
+            <a href="acer-aspire-7.html">
+                <img src="images/laptop1.jpg" alt="Ноутбук 1">
+                <h3>Ноутбук Acer Aspire 7</h3>
+                <p class="price">29 999₴</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="asus-tuf-gaming-a15.html"> 
+                <img src="images/laptop2.jpg" alt="Ноутбук 2">
+                <h3>Ноутбук ASUS TUF Gaming A15</h3>
+                <p class="price">36 999₴</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="acer-nitro-5.html"> 
+                <img src="images/laptop3.jpg" alt="Ноутбук 3">
+                <h3>Ноутбук Acer Nitro 5</h3>
+                <p class="price">48 888₴</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="lenovo-ideapad-gaming.html"> 
+                <img src="images/laptop4.jpg" alt="Ноутбук 4">
+                <h3>Ноутбук Lenovo IdeaPad Gaming</h3>
+                <p class="price">31 999₴</p>
+            </a>
+        </div>
+    </div>
+
+    <br>
+    
+    <h2 style="text-align: center;">Популярні клавіатури та миші</h2>
+    <div class="product-list" id="accessories">
+        <div class="product-item">
+            <a href="hator-rockfall-2.html"> 
+                <img src="images/keyboard1.jpg" alt="Клавіатура 1">
+                <h3>Клавіатура механічна HATOR Rockfall 2</h3>
+                <p class="price">1 899₴</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="gamepro-mk130r.html"> 
+                <img src="images/keyboard2.jpg" alt="Клавіатура 2">
+                <h3>Клавіатура провідна GamePro MK130R</h3>
+                <p class="price">1 699₴</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="logitech-g102.html"> 
+                <img src="images/mouse1.jpg" alt="Миша 1">
+                <h3>Миша Logitech G102</h3>
+                <p class="price">1 099₴</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="hator-pulsar-2-pro.html"> 
+                <img src="images/mouse2.jpg" alt="Миша 2">
+                <h3>Миша Hator Pulsar 2 Pro</h3>
+                <p class="price">1 799₴</p>
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Популярні навушники -->
+    <h2 style="text-align: center;">Популярні навушники</h2>
+    <div class="product-list" id="headphones">
+        <div class="product-item">
+            <a href="trust-gxt491p.html"> 
+                <img src="images/headphone1.jpg" alt="Навушники 1">
+                <h3>Ігрові навушники Trust GXT491P</h3>
+                <p class="price">3 119₴</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="atd-el-a2s.html"> 
+                <img src="images/headphone2.jpg" alt="Навушники 2">
+                <h3>Ігрові навушники ATD ЕL-А2S</h3>
+                <p class="price">1 480₴</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="aula-s6.html"> 
+                <img src="images/headphone3.jpg" alt="Навушники 3">
+                <h3>Гарнітура бездротова Aula S6</h3>
+                <p class="price">999₴</p>
+            </a>
+        </div>
+        <div class="product-item">
+            <a href="bluetooth-mdr-cat.html"> 
+                <img src="images/headphone4.jpg" alt="Навушники 4">
+                <h3>Навушники Bluetooth MDR CAT</h3>
+                <p class="price">384₴</p>
+            </a>
+        </div>
+    </div>
+</main>
+
+
+     <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Ваш кошик</h2>
+            <div id="cart-items"></div>
+            <div id="cart-summary">
+                <p>Кількість товарів: <span id="summary-count">0</span></p>
+                <p>Сума: <span id="cart-total">0.00₴</span></p>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <button class="checkout" onclick="checkout()">Оформити замовлення</button>
+                <button class="close" onclick="toggleCart()">Закрити</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Про нас</h3>
+                <p><strong>Телефон:</strong> +380 (123) 456-789</p>
+                <p><strong>Email:</strong> support@gamezone.ua</p>
+                <p><strong>Адреса:</strong> вул. Технологічна, 101, Київ, Україна</p>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Ми у соцмережах</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 GameZone. Усі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

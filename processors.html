@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Процесори</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Логотип -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="GameZone Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#laptops" class="dropdown-toggle">Ноутбуки, ПК та монітори</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="gaming-laptops.html">Ігрові ноутбуки</a></li>
+                        <li><a href="business-laptops.html">Бізнес ноутбуки</a></li>
+                        <li><a href="computers.html">Комп'ютери</a></li>
+                        <br>
+                        <li><a href="monitors.html">Монітори</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Аксесуари</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="mouse-pads.html">Ігрові поверхні</a></li>
+                        <li><a href="keyboards.html">Клавіатури</a></li>
+                        <br>
+                        <li><a href="microphones.html">Мікрофони</a></li>
+                        <br>
+                        <li><a href="mice.html">Миші</a></li>
+                        <br>
+                        <li><a href="headphones.html">Навушники</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Комплектуючі</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="video-cards.html">Відеокарти</a></li>
+                        <li><a href="computer-cases.html">Комп’ютерні корпуси</a></li>
+                        <li><a href="motherboards.html">Материнські плати</a></li>
+                        <li><a href="ram.html">Оперативна пам’ять</a></li>
+                        <li><a href="processors.html">Процесори</a></li>
+                        <li><a href="ssd.html">SSD-накопичувачі</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Консолі, контролери та VR</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="game-consoles.html">Ігрові приставки</a></li>
+                        <li><a href="gaming-steering-wheels.html">Ігрове кермо</a></li>
+                        <li><a href="vr-headsets.html">Окуляри віртуальної реальності</a></li>
+                        <li><a href="gamepads.html">Геймпади</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="javascript:void(0);" onclick="toggleCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <h2 style="text-align: center; color: black; font-size: 2em; margin: 20px 0;">Процесори</h2>
+        <div class="product-list" id="gaming-laptops">
+            <div class="product-item">
+                <a href="amd-ryzen-7-7800x3d.html">
+                    <img src="images/proc1.jpg" alt="1">
+                    <h3>Процесор AMD Ryzen 7 7800X3D</h3>
+                    <p class="price">21 298₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="intel-core-i5-12400f.html">
+                    <img src="images/proc2.jpg" alt="2">
+                    <h3>Процесор Intel Core i5-12400F</h3>
+                    <p class="price">5 225₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="amd-ryzen-5-5500.html">
+                    <img src="images/proc3.jpg" alt="3">
+                    <h3>Процесор AMD Ryzen 5 5500</h3>
+                    <p class="price">3 999₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="intel-core-i7-12700f.html">
+                    <img src="images/proc4.jpg" alt="4">
+                    <h3>Процесор Intel Core i7-12700F</h3>
+                    <p class="price">11 399₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="amd-ryzen-5-3600.html">
+                    <img src="images/proc5.jpg" alt="5">
+                    <h3>Процесор AMD Ryzen 5 3600</h3>
+                    <p class="price">3 139₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="amd-ryzen-9-5900x.html">
+                    <img src="images/proc6.jpg" alt="6">
+                    <h3>Процесор AMD Ryzen 9 5900X</h3>
+                    <p class="price">13 499₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="intel-core-i3-10105.html">
+                    <img src="images/proc7.jpg" alt="7">
+                    <h3>Процесор Intel Core i3-10105</h3>
+                    <p class="price">4 499₴</p>
+                </a>
+            </div>
+            <div class="product-item">
+                <a href="intel-core-i5-13400f.html">
+                    <img src="images/proc8.jpg" alt="8">
+                    <h3>Процесор Intel Core i5-13400F</h3>
+                    <p class="price">8 147₴</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Ваш кошик</h2>
+            <div id="cart-items"></div>
+            <div id="cart-summary">
+                <p>Кількість товарів: <span id="summary-count">0</span></p>
+                <p>Сума: <span id="cart-total">0.00₴</span></p>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <button class="checkout" onclick="checkout()">Оформити замовлення</button>
+                <button class="close" onclick="toggleCart()">Закрити</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Про нас</h3>
+                <p><strong>Телефон:</strong> +380 (123) 456-789</p>
+                <p><strong>Email:</strong> support@gamezone.ua</p>
+                <p><strong>Адреса:</strong> вул. Технологічна, 101, Київ, Україна</p>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Ми у соцмережах</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 GameZone. Усі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
