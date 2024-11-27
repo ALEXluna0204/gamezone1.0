@@ -1,7 +1,21 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+// Функция для экранирования опасных символов в данных (например, для предотвращения XSS атак)
+function sanitizeInput(input) {
+    const element = document.createElement('div');
+    if (input) {
+        element.textContent = input; // экранируем текст
+        return element.innerHTML; // возвращаем экранированную строку
+    }
+    return '';
+}
+
 // Функция для добавления товара в корзину
 function addToCart(productName, price) {
+    // Очищаем ввод перед добавлением в корзину
+    productName = sanitizeInput(productName);
+    price = sanitizeInput(price); // Для числовых значений можно добавить дополнительную валидацию
+
     const existingProduct = cart.find(item => item.name === productName);
 
     if (existingProduct) {
@@ -35,12 +49,28 @@ function renderCartItems() {
         // Создаем элемент для каждого товара
         const cartItem = document.createElement('div');
         cartItem.className = 'cart-item';
-        cartItem.innerHTML = `
-            <h3>${item.name}</h3>
-            <p>${item.price}₴ × ${item.quantity} = ${itemTotal.toFixed(2)}₴</p>
-            <button onclick="removeFromCart(${index})">-</button> 
-            <button onclick="increaseQuantity(${index})">+</button> 
-        `;
+
+        // Используем textContent для вставки текста (без интерпретации HTML)
+        const nameElement = document.createElement('h3');
+        nameElement.textContent = item.name;
+        
+        const priceElement = document.createElement('p');
+        priceElement.textContent = `${item.price}₴ × ${item.quantity} = ${itemTotal.toFixed(2)}₴`;
+
+        // Создаем кнопки
+        const removeButton = document.createElement('button');
+        removeButton.textContent = '-';
+        removeButton.onclick = () => removeFromCart(index);
+
+        const increaseButton = document.createElement('button');
+        increaseButton.textContent = '+';
+        increaseButton.onclick = () => increaseQuantity(index);
+
+        // Добавляем элементы в контейнер
+        cartItem.appendChild(nameElement);
+        cartItem.appendChild(priceElement);
+        cartItem.appendChild(removeButton);
+        cartItem.appendChild(increaseButton);
         cartItemsContainer.appendChild(cartItem); // Добавляем товар в корзину
     });
 
@@ -74,7 +104,7 @@ function toggleCart() {
 
 // Функция для оформления заказа
 function checkout() {
-   localStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem('cart', JSON.stringify(cart));
 
     // Перенаправляем на страницу оформления заказа
     window.location.href = 'checkout.html';
@@ -82,4 +112,3 @@ function checkout() {
 
 // Слушаем событие загрузки страницы и сразу обновляем корзину
 window.addEventListener('load', updateCart);
-
